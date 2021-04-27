@@ -11,6 +11,7 @@ yarn build
 yarn start 
 ```
 
-### Deploy to vercel
+### vercel - demo
 
-TBD
+Visit -> https://nextjs-100-iota.vercel.app/
+
