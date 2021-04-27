@@ -1,8 +1,8 @@
 // import App from 'next/app'
 
 const MyApp = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />
-}
+  return <Component {...pageProps} />;
+};
 
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
@@ -16,4 +16,4 @@ const MyApp = ({ Component, pageProps }) => {
 //   return { ...appProps }
 // }
 
-export default MyApp
+export default MyApp;

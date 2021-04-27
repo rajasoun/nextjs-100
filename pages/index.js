@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import React from 'react'
+import Head from "next/head";
+import React from "react";
 
 const Index = () => {
   return (
@@ -7,11 +7,9 @@ const Index = () => {
       <Head>
         <title>Next.js 100</title>
       </Head>
-      <div>
-        Next.js 100
-      </div>
+      <div>Next.js 100</div>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
