@@ -16,4 +16,3 @@ yarn start
 
 Visit -> https://nextjs-100-iota.vercel.app/
 
-Integrated Slack with GitHub
