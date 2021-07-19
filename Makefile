@@ -23,7 +23,7 @@ shell: ## Shell to container
 	docker run --rm -it --name=$(APP_NAME) -v "${PWD}:/workspace" --entrypoint=/bin/sh $(IMAGE_NAME)
 
 run: ## Run container 
-	docker run --rm --name="$(APP_NAME)" -v "${PWD}:/workspace" $(IMAGE_NAME) sh -c "/workspace/run_suite.sh"
+	docker run --rm --name="$(APP_NAME)" -p "3000:3000" -v "${PWD}:/workspace" $(IMAGE_NAME) 
 
 login: ## Login To Docker
 	cat token.txt | docker login --username "${USER}" --password-stdin
