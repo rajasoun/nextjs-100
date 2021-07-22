@@ -1,9 +1,12 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import { getLangFromReq } from "../utils/fromReq";
 
+type Props = {
+  lang: string
+}
 
-class MyDocument extends Document {
-  static async getInitialProps(ctx) {
+class MyDocument extends Document<Props> {
+  static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
     const lang = getLangFromReq(ctx.req);
     return { ...initialProps, lang };
