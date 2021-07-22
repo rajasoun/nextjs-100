@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from "next/document";
-import { getLangFromReq } from "../utils/fromReq";
+import getLangFromReq from "../utils/fromReq";
 
 type Props = {
   lang: string
