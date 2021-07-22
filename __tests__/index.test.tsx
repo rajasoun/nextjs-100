@@ -9,6 +9,6 @@ describe("Test case for index.js", () => {
     })
     test.concurrent("check TDD is existing as Header", () =>{
         const wrapper = shallow(<Index />);
-        expect(wrapper.find('title').text()).toEqual('TDD with Jest');
+        expect(wrapper.find('title').text()).toEqual('Next.js 100');
     })
 })
