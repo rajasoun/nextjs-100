@@ -40,3 +40,4 @@ yarn-error.log*
 
 # dependency
 package-lock.json
+yarn.lock
