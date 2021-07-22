@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Next.js 100</title>
+        <title>TDD with Jest</title>
       </Head>
       <div>Next.js 100</div>
     </>
