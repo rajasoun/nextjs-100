@@ -1,4 +1,4 @@
-const getLangFromReq = (req = {}) => {
+const getLangFromReq = (req: any = {}) => {
   const headers = req.headers || {};
   const acceptLanguage = headers["accept-language"];
   return acceptLanguage && acceptLanguage.length > 0
@@ -6,6 +6,4 @@ const getLangFromReq = (req = {}) => {
     : "en";
 };
 
-module.exports = {
-  getLangFromReq,
-};
+export default getLangFromReq;
